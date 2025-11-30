@@ -1,0 +1,65 @@
+/*The following are my modifications for Kinmuri's 'Ukiyo Golden Book Dark Mode' as forked by Technerium
+i plugged this into CSS Snippets but lord knows if i'll actually touch their code
+
+Lord help me I've only been studying CSS for about a month whO WAS GONNA TELL ME THERE WERE DEVELOPER TOOLS IN OBSIDIAN???
+this is why you read the manual
+
+a lot of "i had a theory, it works, id need a second opinion to confer" modifications but at least most of it doesnt interfere with the other themes
+
+changes by ods-ends*/
+
+/*this is the only reason i spent three days tearing my hair out before i found out dev tools existed on there
+behold: YOU CAN NOW READ THE TABLE OF CONTENTS BAHAHAHAHAHAH*/
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .pdf-sidebar-container{
+    --nav-item-color: var(--color-base-25);
+    --nav-collapse-icon-color: var(--color-base-25);
+    --nav-item-color-active: var(--color-base-40);
+    --nav-item-color-hover: var(--color-base-35);
+}
+
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .pdf-toolbar {
+    --icon-color: var(--color-base-25);
+    --icon-color-focused: var(--color-base-35);
+    --icon-color-active: var(--color-base-35);
+    --icon-color-hover: var(--color-base-35);
+}
+
+/*this is necessary for nixing the vault-profile text color; it affects all themes but you can manually change it
+in .workspace-sidedock-vault-profile to match the other themes*/
+body {
+    --vault-profile-color: inherit;
+}
+
+/*i like colours get rid of this if ye want*/
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .markdown-preview-view, .markdown-source-view { 
+    --h1-color: var(--color-red);
+    --h2-color: #da7347;
+    --h3-color: var(--color-blue);
+    --h4-color: #588b72;
+    --h5-color: var(--color-yellow);
+    --h6-color: var(--color-purple);
+}
+
+/*note that changing the color from the body selector overrides these changes; i dont know why and at this point i have no one 
+to ask*/
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .view-header {
+    --text-normal:var(--colorbase-35);
+    --text-muted: var(--colorbase-25);
+    --text-faint: var(--colorbase-20);
+}
+
+/*annoying ass vault details*/
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .workspace-sidedock-vault-profile{
+    --text-normal: var(--color-base-40);
+    --text-muted: var(--color-base-10);
+    --text-faint: var(--color-base-10);
+    color: var(--color-base-40);
+    --icon-color: var(--color-base-40);
+    --icon-color-hover: var(--color-base-10);
+    --icon-color-active: var(--color-base-20);
+}
+
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .menu {
+    --text-muted: #dd9fff;
+    --text-faint: #be4242;
+}
