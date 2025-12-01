@@ -59,7 +59,20 @@ to ask*/
     --icon-color-active: var(--color-base-20);
 }
 
+/* tweaked menu icon colors since the red was blending in too much */
 .color-scheme-golden-book:not(.separate-color-scheme).theme-dark .menu {
     --text-muted: #dd9fff;
-    --text-faint: #be4242;
+}
+
+/*the following are minor alterations to the graph menu*/
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .graph-controls {
+    --text-normal: var(--color-base-30);
+    --icon-color: var(--color-base-25);
+    --icon-color-hover: var(--interactive-hover);
+    --nav-collapse-icon-color: var(--icon-color);
+}
+
+/* dunno why it wont let me attach .graph-controls as the parent selector but it works ┐(´ー｀)┌ */
+.color-scheme-golden-book:not(.separate-color-scheme).theme-dark .graph-color-group {
+    --text-normal: var(--color-base-00);
 }
