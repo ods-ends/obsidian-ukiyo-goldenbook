@@ -76,3 +76,8 @@ to ask*/
 .color-scheme-golden-book:not(.separate-color-scheme).theme-dark .graph-color-group {
     --text-normal: var(--color-base-00);
 }
+
+/*darkens the view-header back-forth buttons*/
+.color-scheme-golden-book:not(.separate-color-scheme) .view-header-nav-buttons .clickable-icon {
+    color: var(--interactive-normal);
+}
